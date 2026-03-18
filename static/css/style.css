@@ -1,15 +1,20 @@
-/* Clase personalizada para el efecto de la imagen */
-  .card-custom-img {
-    width: 85%;            /* Controla qué tan ancha es la imagen respecto a la card */
-    margin: -30px auto 0;  /* El -30px la sube, auto la centra horizontalmente */
-    border-radius: 15px;   /* Bordes redondeados para ese look moderno */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
-    z-index: 1;            /* Asegura que esté por encima de la tarjeta */
-  }
-
-  .card {
-    margin-top: 50px;      /* Espacio arriba para que la imagen no choque con lo que hay arriba */
-    border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 20px;
-  }
+/* CSS Personalizado para que se vea profesional */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .tabla-cuidados {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        section {
+            padding: 60px 0;
+        }

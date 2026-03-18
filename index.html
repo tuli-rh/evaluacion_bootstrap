@@ -4,39 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mundo Gatuno | Guía Completa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
-    <title>Instapapoig</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="card" style="width: 18rem;">
-            <img src="tu-imagen.jpg" class="card-custom-img" alt="Descripción">
-
-            <div class="card-body text-center">
-                <h5 class="card-title">Título del Diseño</h5>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">🐾 MUNDO GATUNO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#razas">Razas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cuidados">Cuidados</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Amor por los Gatos</h1>
+            <p class="lead">Todo lo que necesitas saber sobre tus razas favoritas y su bienestar.</p>
+            <a href="#razas" class="btn btn-warning btn-lg px-4 fw-bold">Explorar Razas</a>
         </div>
     </header>
 
-    <aside>
-        <div class="icon">
-            <i class="bi bi-instagram"></i>
+    <section id="razas" class="container">
+        <h2 class="text-center mb-5">Razas Destacadas</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Siamés">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Siamés</h5>
+                        <p class="card-text text-muted">Gatos elegantes y muy parlanchines. Adoran la compañía humana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Maine Coon">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Maine Coon</h5>
+                        <p class="card-text text-muted">El gato más grande del mundo doméstico. Son verdaderos gigantes
+                            dulces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Persa">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Persa</h5>
+                        <p class="card-text text-muted">Famosos por su cara plana y pelo largo. Son la definición de
+                            tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <i class="bi bi-house-door-fill"></i>
-        <i class="bi bi-play-btn"></i>
-        <i class="bi bi-search"></i>
-        
-    </aside>
+    </section>
 
-    <main class="container">
+    <section id="cuidados" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Guía de Cuidados Esenciales</h2>
+            <div class="table-responsive shadow tabla-cuidados">
+                <table class="table table-white table-striped align-middle mb-0">
+                    <thead class="table-primary">
+                        <tr>
+                            <th class="p-3">Categoría</th>
+                            <th class="p-3">Acción Recomendada</th>
+                            <th class="p-3">Frecuencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Alimentación</td>
+                            <td>Comida seca y húmeda de alta calidad.</td>
+                            <td>2 a 3 veces al día</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Higiene (Caja)</td>
+                            <td>Limpiar desechos y renovar arena.</td>
+                            <td>Diario</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Cepillado</td>
+                            <td>Eliminar pelo muerto para evitar bolas de pelo.</td>
+                            <td>2-3 veces por semana</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Veterinario</td>
+                            <td>Chequeo general y vacunas.</td>
+                            <td>Anual</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold text-warning mb-3">🐾 Mundo Gatuno</h5>
+                <p class="small text-secondary">
+                    Tu portal favorito para aprender sobre el fascinante comportamiento, 
+                    las razas y los cuidados esenciales de nuestros amigos felinos.
+                </p>
+            </div>
 
-    <script src="static/js/script.js"></script>
+            <div class="col-md-4 mb-4 text-md-center">
+                <h5 class="fw-bold text-warning mb-3">Explorar</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#inicio" class="text-secondary text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="#razas" class="text-secondary text-decoration-none">Razas de Gatos</a></li>
+                    <li class="mb-2"><a href="#cuidados" class="text-secondary text-decoration-none">Guía de Cuidados</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5 class="fw-bold text-warning mb-3">Contacto</h5>
+                <p class="small text-secondary mb-1">📍 Ciudad Gatuna, 2026</p>
+                <p class="small text-secondary mb-1">✉️ info@mundogatuno.com</p>
+                <p class="small text-secondary">📞 +123 456 789</p>
+            </div>
+        </div>
+
+        <hr class="border-secondary mt-4">
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="small text-secondary mb-0">
+                    &copy; 2026 <b>Mundo Gatuno</b>. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
